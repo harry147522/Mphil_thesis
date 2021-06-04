@@ -1,0 +1,207 @@
+\section{Flat metric in 3D}
+
+Note that the term $ \hat{\Gamma}^l_{ik}(f_S)^k_l $ is called geometricial source terms.
+
+cylindrical coordinate,
+\begin{equation}
+ ds^2 = dr^2 + dz^2 + r^2 d\phi^2 
+\end{equation}
+
+\begin{align}
+	\hat{\gamma}_{ij} &= \begin{bmatrix}
+		1 & 0 & 0 \\
+		0 & 1 & 0 \\
+		0 & 0 & r^2 \\
+       	\end{bmatrix}
+\end{align}
+
+\begin{align}
+	\hat{\Gamma}^r_{ij} = &\begin{bmatrix}
+		0 & 0 & 0 \\
+		0 & 0 & 0 \\
+		0 & 0 & -r \\
+       	\end{bmatrix} &
+	\hat{\Gamma}^z_{ij} = &\begin{bmatrix}
+		0 & 0 & 0 \\
+		0 & 0 & 0 \\
+		0 & 0 & 0 \\
+       	\end{bmatrix} &
+	\hat{\Gamma}^\phi_{ij} = &\begin{bmatrix}
+		0  & 0& \frac{1}{r} \\
+		0 & 0 & 0 \\
+		\frac{1}{r} & 0 & 0 \\
+       	\end{bmatrix}
+\end{align}
+
+\begin{align}
+\hat{\Gamma}^l_{rk}(f_{S_l})^k =& \hat{\Gamma}^\phi_{r\phi}(f_{S_\phi})^\phi \\ %\hat{\Gamma}^l_{rk}(f_S)^k_l =& \frac{\alpha}{r} \left\{ S_\phi (v^\phi-\beta^\phi/\alpha) + p\psi^6\sqrt{\bar{\gamma}/\hat{\gamma}} \right\}\\
+\hat{\Gamma}^l_{zk}(f_{S_l})^k  =& 0  \\
+\hat{\Gamma}^l_{\phi k }(f_{S_l})^k_l =& 0
+\end{align}
+
+Define
+\begin{align}
+&r_\pm = r \pm \frac{1}{2}\Delta r&
+&z_\pm = z \pm \frac{1}{2}\Delta z& 
+&\phi_\pm = \phi \pm \frac{1}{2}\Delta \phi &
+\end{align}
+
+\begin{align}
+\Delta A_r\Big|_{r_\pm} &= \int_{\text{surface}} \sqrt{\gamma} dz d\phi  \Big|_{r_\pm} \\
+         &= \int_{z_-}^{z^+} \int_{\phi_-}^{\phi^+} r_\pm dz d\phi \\
+         &= \left( r \pm \frac{\Delta r}{2} \right) \left( \Delta z \right) \left( \Delta \phi \right)
+\end{align}
+
+\begin{align}
+\Delta A_z \Big|_{z_\pm} &= \int_{\text{surface}} \sqrt{\gamma} dr d\phi  \Big|_{z_\pm} \\
+         &= \int_{r_-}^{r^+} \int_{\phi_-}^{\phi^+} r dr d\phi  \Big|_{z_\pm} \\
+         &= \left( \frac{r^2}{2} \right)\Big|_{r_-}^{r^+}  \left( \Delta \phi \right)\\
+         &=  r \left( \Delta r \right) \left( \Delta \phi \right)
+\end{align}
+
+\begin{align}
+\Delta A_\phi \Big|_{\phi_\pm} &= \int_{\text{surface}} \sqrt{\gamma} dr dz  \Big|_{\phi_\pm} \\
+         &= \int_{r_-}^{r^+} \int_{z_-}^{z^+} r dr dz  \Big|_{\phi_\pm} \\
+         &= \left( \frac{r^2}{2} \right)\Big|_{r_-}^{r^+}  \left( \Delta z \right)\\
+         &=  r \left( \Delta r \right) \left( \Delta z \right)
+\end{align}
+
+\begin{align}
+\Delta V &= \int_{\text{cell}} \sqrt{\gamma} dr dz d\phi \\
+         &= \int_{r_-}^{r^+} \int_{z_-}^{z^+} \int_{\phi_-}^{\phi^+} r dr dz d\phi \\
+         &=  r \left( \Delta r \right) \left( \Delta z \right) \left( \Delta \phi \right)
+\end{align}
+
+\begin{align}
+\left<\Gamma^{r}_{\phi\phi } \right> &= \frac{1}{\Delta V} \int_{\text{cell}} \Gamma^{r}_{\phi \phi} \sqrt{\gamma} dr dz d\phi \\
+          = \left< - {r} \right> &= - \frac{1}{\Delta V} \int_{r_-}^{r^+} \int_{z_-}^{z^+} \int_{\phi_-}^{\phi^+} r^2 dr dz d\phi \\
+         &=  - \frac{1}{\Delta V} \left( \frac{1}{3} r^3 \Big|_{r_-}^{r^+} \right) \left( \Delta z \right) \left( \Delta \phi \right)\\
+         &= - \frac{1}{r} \left(r^2 + \frac{1}{12}\left(\Delta r\right)^2\right)
+\end{align}
+\begin{align}
+\left<\Gamma^{\phi}_{\phi r} \right> = \left<\Gamma^{\phi}_{r \phi } \right> &= \frac{1}{\Delta V} \int_{\text{cell}} \Gamma^{\phi}_{r \phi} \sqrt{\gamma} dr dz d\phi \\
+          = \left< \frac{1}{r} \right> &= \frac{1}{\Delta V} \int_{r_-}^{r^+} \int_{z_-}^{z^+} \int_{\phi_-}^{\phi^+} dr dz d\phi \\
+         &= \frac{1}{r}
+\end{align}
+
+Spherical coordinate,
+\begin{equation}
+ ds^2 = dr^2 + r^2 d\theta^2 + r^2\sin^2\theta d\phi^2
+\end{equation}
+
+\begin{align}
+	\hat{\gamma}_{ij} &= \begin{bmatrix}
+		1 & 0 & 0 \\
+		0 &r^2 & 0 \\
+		0 & 0 &r^2 \sin^2\theta  \\
+       	\end{bmatrix}
+\end{align}
+
+
+\begin{align}
+	\hat{\Gamma}^r_{ij} &= \begin{bmatrix}
+		0 & 0 & 0 \\
+		0 &-r & 0 \\
+		0 & 0 &-r \sin^2\theta  \\
+       	\end{bmatrix} &
+	\hat{\Gamma}^\theta_{ij} &= \begin{bmatrix}
+		0 & \frac{1}{r} & 0 \\
+		\frac{1}{r} & 0 & 0 \\
+		0 & 0 & -\sin\theta\cos\theta  \\
+       	\end{bmatrix} &
+	\hat{\Gamma}^\phi_{ij} &= \begin{bmatrix}
+		0 & 0 & \frac{1}{r}\\
+		0 & 0 & \cot\theta \\
+		\frac{1}{r} & \cot\theta & 0 \\
+       	\end{bmatrix}
+\end{align}
+
+\begin{align}
+%\hat{\Gamma}^l_{rk}(f_S)^k_l =& \hat{\Gamma}^\theta_{r\theta}(f_S)^\theta_\theta + \hat{\Gamma}^\phi_{r\phi}(f_S)^\phi_\phi \\% \nonumber
+%=&\hat{\Gamma}^\theta_{r\theta} \alpha\psi^6\sqrt{\bar{\gamma}/\hat{\gamma}}\left\{ W^2\rho h v_\theta (v^\theta-\beta^\theta/\alpha) + W^2\rho h v_\phi (v^\phi-\beta^\phi/\alpha) + 2 p \right\} \\ \nonumber
+%=&\frac{\alpha}{r} \left\{ S_\theta (v^\theta-\beta^\theta/\alpha) + S_\phi (v^\phi-\beta^\phi/\alpha) + 2 p\psi^6\sqrt{\bar{\gamma}/\hat{\gamma}} \right\}\\
+%\hat{\Gamma}^l_{\theta k }(f_S)^k_l =& \hat{\Gamma}^r_{\theta \theta}(f_S)^\theta_r + \hat{\Gamma}^\theta_{\theta r}(f_S)_\theta^r + \hat{\Gamma}^\phi_{\theta \phi}(f_S)^\phi_\phi \\ %\nonumber
+%=&\alpha \Big\{ -r S_r (v^\theta-\beta^\theta/\alpha) + \frac{1}{r} S_\theta (v^r-\beta^r/\alpha) \\ \nonumber
+%&+ \cot \theta \left[ S_\phi (v^\phi-\beta^\phi/\alpha) + p\psi^6\sqrt{\bar{\gamma}/\hat{\gamma}} \right] \Big\} \\
+%\hat{\Gamma}^\phi_{ik}(f_S)^k_\phi =& 0
+\hat{\Gamma}^l_{rk}(f_{S_l})^k =& \hat{\Gamma}^\theta_{r\theta}(f_{S_\theta})^\theta + \hat{\Gamma}^\phi_{r\phi}(f_{S_\phi})^\phi \\
+\hat{\Gamma}^l_{\theta k }(f_{S_l})^k =& \hat{\Gamma}^r_{\theta \theta}(f_{S_r})^\theta + \hat{\Gamma}^\theta_{\theta r}(f_{S_\theta})^r + \hat{\Gamma}^\phi_{\theta \phi}(f_{S_\phi})^\phi \\ %\nonumber
+\hat{\Gamma}^l_{\phi k}(f_{S_l})^k =& 0
+\end{align}
+
+
+Define
+\begin{align}
+r_\pm &= r \pm \frac{1}{2}\Delta r \\
+\theta_\pm &= \theta \pm \frac{1}{2}\Delta \theta \\
+\phi_\pm &= \phi \pm \frac{1}{2}\Delta \phi 
+\end{align}
+
+\begin{align}
+\Delta A_r\Big|_{r_\pm} &= \int_{\text{surface}} \sqrt{\gamma} d\theta d\phi  \Big|_{r_\pm} \\
+         &= \int_{\theta_-}^{\theta^+} \int_{\phi_-}^{\phi^+} r_\pm^2 \sin \theta d\theta d\phi \\
+         &= \left( r \pm \frac{\Delta r}{2} \right)^2 \left( \cos \theta \Big|_{\theta_-}^{\theta^+} \right) \left( \Delta \phi \right)\\
+         &=  \left( r \pm \frac{\Delta r}{2} \right)^2 \left( 2 \sin \theta \sin\left(\frac{\Delta \theta}{2}\right) \right) \left( \Delta \phi \right)
+\end{align}
+
+\begin{align}
+\Delta A_\theta \Big|_{\theta_\pm} &= \int_{\text{surface}} \sqrt{\gamma} dr d\phi  \Big|_{\theta_\pm} \\
+         &= \int_{r_-}^{r^+} \int_{\phi_-}^{\phi^+} r^2 \sin \theta dr d\phi  \Big|_{\theta_\pm} \\
+         &= \left( \frac{r^3}{3} \right)\Big|_{r_-}^{r^+}  \left( \sin \theta_\pm \right) \left( \Delta \phi \right)\\
+         &=  \left( \left(r^2 + \frac{1}{12}\left(\Delta r\right)^2\right)\Delta r \right) \left( \sin \left( \theta \pm \frac{\Delta \theta}{2} \right) \right) \left( \Delta \phi \right)
+\end{align}
+
+\begin{align}
+\Delta A_\phi \Big|_{\phi_\pm} &= \int_{\text{surface}} \sqrt{\gamma} dr d\theta \\
+         &= \int_{r_-}^{r^+} \int_{\theta_-}^{\theta^+} r^2 dr d\theta  \Big|_{\phi_\pm} \\
+         &= \left( \frac{r^3}{3} \right)\Big|_{r_-}^{r^+}  \left( \Delta \theta \right) \Big|_{\phi_\pm} \\
+         &=  \left( \left(r^2 + \frac{1}{12}\left(\Delta r\right)^2\right)\Delta r \right) \left( \Delta \theta \right)
+\end{align}
+
+\begin{align}
+\Delta V &= \int_{\text{cell}} \sqrt{\gamma} dr d\theta d\phi \\
+         &= \int_{r_-}^{r^+} \int_{\theta_-}^{\theta^+} \int_{\phi_-}^{\phi^+} r^2 \sin \theta dr d\theta d\phi \\
+         &= \left( \frac{1}{3} r^3 \Big|_{r_-}^{r^+} \right) \left( \cos \theta \Big|_{\theta_-}^{\theta^+} \right) \left( \Delta \phi \right)\\
+         &= \left( \left(r^2 + \frac{1}{12}\left(\Delta r\right)^2\right)\Delta r \right) \left( 2 \sin \theta \sin\left(\frac{\Delta \theta}{2}\right) \right) \left( \Delta \phi \right)
+\end{align}
+
+Volume averaged $\Gamma$s
+
+\begin{align}
+\left<\Gamma^{\theta}_{r \theta} \right> &= \left<\Gamma^{\theta}_{ \theta r} \right>  = \left<\Gamma^{\phi}_{r \phi} \right> = \left<\Gamma^{\phi}_{\phi r} \right> \\
+ = \left<\frac{1}{r}\right>&= \frac{1}{\Delta V} \int_{\text{cell}} \Gamma^{\theta}_{r \theta} \sqrt{\gamma} dr d\theta d\phi \\
+         &= \frac{1}{\Delta V} \int_{r_-}^{r^+} \int_{\theta_-}^{\theta^+} \int_{\phi_-}^{\phi^+} \frac{1}{r} r^2 \sin \theta dr d\theta d\phi \\
+         &= \frac{1}{\Delta V} \left( \frac{1}{2} r^2 \Big|_{r_-}^{r^+} \right) \int_{\theta_-}^{\theta^+} \int_{\phi_-}^{\phi^+} \sin \theta d\theta d\phi \\
+	 &= \frac{1}{\Delta V} \frac{1}{2} \left( \Delta A_r\Big|_{r_+} - \Delta A_r\Big|_{r_-} \right) \\
+         &= \frac{ r }{ \left(r^2 + \frac{1}{12}\left(\Delta r\right)^2 \right) }
+\end{align}
+
+\begin{align}
+\left<\Gamma^{r}_{\theta \theta} \right> &= \frac{1}{\Delta V} \int_{\text{cell}} \Gamma^{r }_{\theta \theta} \sqrt{\gamma} dr d\theta d\phi \\
+          = \left< {-r}\right> &= \frac{1}{\Delta V} \int_{r_-}^{r^+} \int_{\theta_-}^{\theta^+} \int_{\phi_-}^{\phi^+} (-r) r^2 \sin \theta dr d\theta d\phi \\
+         &= \frac{1}{\Delta V} \left( -\frac{1}{4} r^4 \Big|_{r_-}^{r^+} \right) \int_{\theta_-}^{\theta^+} \int_{\phi_-}^{\phi^+} \sin \theta d\theta d\phi \\
+	 &= -\frac{1}{\Delta V} \frac{1}{4} \left( r_+^2\Delta A_r\Big|_{r_+} - r_-^2\Delta A_r\Big|_{r_-} \right) \\
+         &= - \frac{ r \left( r^2 - \frac{1}{4}\left(\Delta r\right)^2\right)  }{ \left(r^2 + \frac{1}{12}\left(\Delta r\right)^2 \right) }
+\end{align}
+
+\begin{align}
+\left<\Gamma^{r}_{\phi \phi} \right> &= \frac{1}{\Delta V} \int_{\text{cell}} \Gamma^{r}_{\phi \phi} \sqrt{\gamma} dr d\theta d\phi \\
+          = \left< {-r \sin^2 \theta }\right> &= \frac{1}{\Delta V} \int_{r_-}^{r^+} \int_{\theta_-}^{\theta^+} \int_{\phi_-}^{\phi^+} (-r \sin^2 \theta) r^2 \sin \theta dr d\theta d\phi \\
+         &= \frac{1}{\Delta V} \left( -\frac{1}{4} r^4 \Big|_{r_-}^{r^+} \right) \left(\frac{1}{3}\cos^3\theta - \cos\theta\right)\Big|_{\theta_-}^{\theta^+} \Delta \phi 
+\end{align}
+
+\begin{align}
+\left<\Gamma^{\theta}_{\phi \phi} \right> &= \frac{1}{\Delta V} \int_{\text{cell}} \Gamma^{\theta}_{\phi \phi} \sqrt{\gamma} dr d\theta d\phi \\
+          = \left< {-\sin \theta \cos \theta }\right> &= \frac{1}{\Delta V} \int_{r_-}^{r^+} \int_{\theta_-}^{\theta^+} \int_{\phi_-}^{\phi^+} (-\sin \theta \cos \theta) r^2 \sin \theta dr d\theta d\phi \\
+         &= - \frac{1}{\Delta V} \left( \frac{1}{3} r^3 \Big|_{r_-}^{r^+} \right) \left( \frac{1}{3} \sin^3 \theta \Big|_{\theta_-}^{\theta^+} \right) \left( \Delta \phi \right) \\
+	 &= - \frac{1}{3} \frac{1}{\Delta V} \left( \sin^2 (\theta_+) \Delta A_\theta\Big|_{\theta_+} - \sin^2 (\theta_-) \Delta A_\theta \Big|_{\theta_-} \right)
+\end{align}
+
+\begin{align}
+\left<\Gamma^{\phi}_{\theta \phi} \right> = \left<\Gamma^{\phi}_{\phi \theta } \right> &= \frac{1}{\Delta V} \int_{\text{cell}} \Gamma^{\phi}_{r \phi} \sqrt{\gamma} dr d\theta d\phi \\
+          = \left< {\cot \theta}\right> &= \frac{1}{\Delta V} \int_{r_-}^{r^+} \int_{\theta_-}^{\theta^+} \int_{\phi_-}^{\phi^+} (\cot \theta) r^2 \sin \theta dr d\theta d\phi \\
+         &= \frac{1}{\Delta V} \left( \frac{1}{3} r^3 \Big|_{r_-}^{r^+} \right) \left( \sin \theta \Big|_{\theta_-}^{\theta^+} \right) \left( \Delta \phi \right) \\
+	 &= \frac{1}{\Delta V} \left( \Delta A_\theta\Big|_{\theta_+} - \Delta A_\theta \Big|_{\theta_-} \right) \\
+         &= \cot \theta
+\end{align}
+

@@ -1,0 +1,122 @@
+The cell volume $\Delta V$, cell surface $\Delta A$ and the volume-average of the 3-Christoffel symbols $\left< \hat{\Gamma}^l_{ik}\right>$ which is contained in the geometrical are non-trivial when the reference metric $\hat{\gamma}_{ij}$ is chosen to be cylindrical or spherical.
+Here we list out the relations we implemented in \texttt{Gmunu}.
+\subsection*{Cylindrical Coordinate}
+The line element can be expressed as: $ ds^2 = dR^2 + dz^2 + R^2 d\varphi^2 $, with the reference metric $\hat{\gamma}_{ij}$:
+\begin{align}
+	\hat{\gamma}_{ij} &= \begin{bmatrix}
+		1 & 0 & 0 \\
+		0 & 1 & 0 \\
+		0 & 0 & R^2 \\
+       	\end{bmatrix}.
+\end{align}
+The associated 3-Christoffel symbols $\hat{\Gamma}^l_{ik}$ are:
+\begin{align}
+	\hat{\Gamma}^R_{ij} = &\begin{bmatrix}
+		0 & 0 & 0 \\
+		0 & 0 & 0 \\
+		0 & 0 & -R \\
+       	\end{bmatrix}, &
+	\hat{\Gamma}^z_{ij} = &\begin{bmatrix}
+		0 & 0 & 0 \\
+		0 & 0 & 0 \\
+		0 & 0 & 0 \\
+       	\end{bmatrix}, &
+	\hat{\Gamma}^\varphi_{ij} = &\begin{bmatrix}
+		0  & 0& \frac{1}{R} \\
+		0 & 0 & 0 \\
+		\frac{1}{R} & 0 & 0 \\
+       	\end{bmatrix}.
+\end{align}
+The geometrical source terms for the momentum equations are:
+\begin{align}
+\hat{\Gamma}^l_{Rk}(f_{S_l})^k =& \hat{\Gamma}^\varphi_{R\varphi}(f_{S_\varphi})^\varphi ,\\
+\hat{\Gamma}^l_{zk}(f_{S_l})^k  =& 0  ,\\
+\hat{\Gamma}^l_{\varphi k }(f_{S_l})^k =& 0 .
+\end{align}
+Here we note that since $z$ and $\varphi$ do not explicitly enter into the reference metric $\hat{\gamma}_{ij}$, the corresponding geometrical source terms for the momentum equation $q_{S_j}$ are vanishing. 
+In this formulations, the linear momentum $q_{S_z}$ and the angular momentum $q_{S_\varphi}$ are conserved to machine precision.
+
+To work out the cell volume $\Delta V$, cell surface $\Delta A$ and the volume-average of the 3-Christoffel symbols $\left< \hat{\Gamma}^l_{ik}\right>$, we define the following notations: 
+\begin{align}
+&R_\pm \equiv R \pm \frac{1}{2}\Delta R,&
+&z_\pm \equiv z \pm \frac{1}{2}\Delta z,& 
+&\varphi_\pm \equiv \varphi \pm \frac{1}{2}\Delta \varphi ,&
+\end{align}
+where $(R,z,\varphi)$ are the location at the cell centre at some particular point while $(\Delta R,\Delta z,\Delta \varphi)$ are the corresponding grid sizes.
+The cell surface $\Delta A$ and the cell volume $\Delta V$ can then be expressed as:
+\begin{align}
+\Delta l_R &= R \left( \Delta R \right) ,\\
+\Delta l_z &= R \left( \Delta z \right) ,\\
+\Delta l_\varphi &= R \left( \Delta \varphi \right) ,\\
+\Delta A_R\Big|_{R_\pm} &= \left( R \pm \frac{\Delta R}{2} \right) \left( \Delta z \right) \left( \Delta \varphi \right) ,\\
+\Delta A_z \Big|_{z_\pm} &= R \left( \Delta R \right) \left( \Delta \varphi \right) ,\\
+\Delta A_\varphi \Big|_{\varphi_\pm} &= R \left( \Delta R \right) \left( \Delta z \right) ,\\
+\Delta V &=  R \left( \Delta R \right) \left( \Delta z \right) \left( \Delta \varphi \right).
+\end{align}
+Finally, the non-vanishing volume-averaged 3-Christoffel symbols $\left< \hat{\Gamma}^l_{ik}\right>$ are:
+\begin{align}
+&\left<\hat{\Gamma}^{R}_{\varphi\varphi } \right> = - \frac{1}{R} \left(R^2 + \frac{1}{12}\left(\Delta R\right)^2\right), \\
+&\left<\hat{\Gamma}^{\varphi}_{\varphi R} \right> = \left<\hat{\Gamma}^{\varphi}_{R \varphi } \right> = \frac{1}{R}.
+\end{align}
+
+\subsection*{Spherical Coordinate}
+The line element can be expressed as: $ ds^2 = dr^2 + r^2 d\theta^2 + r^2\sin^2\theta d\phi^2 $, with the reference metric $\hat{\gamma}_{ij}$:
+\begin{align}
+	\hat{\gamma}_{ij} &= \begin{bmatrix}
+		1 & 0 & 0 \\
+		0 &r^2 & 0 \\
+		0 & 0 &r^2 \sin^2\theta  \\
+       	\end{bmatrix}.
+\end{align}
+The associated 3-Christoffel symbols $\hat{\Gamma}^l_{ik}$ are:
+\begin{align}
+	\hat{\Gamma}^r_{ij} &= \begin{bmatrix}
+		0 & 0 & 0 \\
+		0 &-r & 0 \\
+		0 & 0 &-r \sin^2\theta  \\
+       	\end{bmatrix}, \\
+	\hat{\Gamma}^\theta_{ij} &= \begin{bmatrix}
+		0 & \frac{1}{r} & 0 \\
+		\frac{1}{r} & 0 & 0 \\
+		0 & 0 & -\sin\theta\cos\theta  \\
+       	\end{bmatrix}, \\
+	\hat{\Gamma}^\phi_{ij} &= \begin{bmatrix}
+		0 & 0 & \frac{1}{r}\\
+		0 & 0 & \cot\theta \\
+		\frac{1}{r} & \cot\theta & 0 \\
+       	\end{bmatrix}.
+\end{align}
+The geometrical source terms for the momentum equations are:
+\begin{align}
+\hat{\Gamma}^l_{rk}(f_{S_l})^k =& \hat{\Gamma}^\theta_{r\theta}(f_{S_\theta})^\theta + \hat{\Gamma}^\phi_{r\phi}(f_{S_\phi})^\phi ,\\
+\hat{\Gamma}^l_{\theta k }(f_{S_l})^k =& \hat{\Gamma}^r_{\theta \theta}(f_{S_r})^\theta + \hat{\Gamma}^\theta_{\theta r}(f_{S_\theta})^r + \hat{\Gamma}^\phi_{\theta \phi}(f_{S_\phi})^\phi ,\\ %\nonumber
+\hat{\Gamma}^l_{\phi k}(f_{S_l})^k =& 0.
+\end{align}
+Simularity, as in the cylindrical case, the angular momentum $q_{S_\phi}$ are conserved to machine precision.
+
+To work out the cell volume $\Delta V$, cell surface $\Delta A$ and the volume-average of the 3-Christoffel symbols $\left< \hat{\Gamma}^l_{ik}\right>$, we define the following notations: 
+\begin{align}
+&r_\pm = r \pm \frac{1}{2}\Delta r ,&
+&\theta_\pm = \theta \pm \frac{1}{2}\Delta \theta ,&
+&\phi_\pm = \phi \pm \frac{1}{2}\Delta \phi ,&
+\end{align}
+where $(r,\theta,\phi)$ are the location at the cell centre at some particular point while $(\Delta r,\Delta \theta,\Delta \phi)$ are the corresponding grid sizes.
+The cell surface $\Delta A$ and the cell volume $\Delta V$ can then be expressed as:
+\begin{align}
+\Delta l_r &=  \left( \left(r^2 + \frac{1}{12}\left(\Delta r\right)^2\right)\Delta r \right) \sin \theta \\
+\Delta l_\theta &= r^2 \left( 2 \sin \theta \sin\left(\frac{\Delta \theta}{2}\right) \right) \\
+\Delta l_\phi &= r^2 \sin\theta  \left( \Delta \phi \right) \\
+\Delta A_r\Big|_{r_\pm} &= \left( r \pm \frac{\Delta r}{2} \right)^2 \left( 2 \sin \theta \sin\left(\frac{\Delta \theta}{2}\right) \right) \left( \Delta \phi \right) \\
+\Delta A_\theta \Big|_{\theta_\pm} &=  \left( \left(r^2 + \frac{1}{12}\left(\Delta r\right)^2\right)\Delta r \right) \left( \sin \left( \theta \pm \frac{\Delta \theta}{2} \right) \right) \left( \Delta \phi \right) \\
+\Delta A_\phi \Big|_{\phi_\pm} &=  \left( \left(r^2 + \frac{1}{12}\left(\Delta r\right)^2\right)\Delta r \right) \left( 2 \sin \theta \sin\left(\frac{\Delta \theta}{2}\right) \right)\\
+\Delta V &= \left( \left(r^2 + \frac{1}{12}\left(\Delta r\right)^2\right)\Delta r \right) \left( 2 \sin \theta \sin\left(\frac{\Delta \theta}{2}\right) \right) \left( \Delta \phi \right)
+\end{align}
+Finally, the non-vanishing volume-averaged 3-Christoffel symbols $\left< \hat{\Gamma}^l_{ik}\right>$ are:
+\begin{align}
+&\left<\hat{\Gamma}^{\theta}_{r \theta} \right> = \left<\hat{\Gamma}^{\theta}_{ \theta r} \right>  = \left<\hat{\Gamma}^{\phi}_{r \phi} \right> = \left<\hat{\Gamma}^{\phi}_{\phi r} \right>
+ = \frac{1}{\Delta V} \frac{1}{2} \left( \Delta A_r\Big|_{r_+} - \Delta A_r\Big|_{r_-} \right) \\
+&\left<\hat{\Gamma}^{r}_{\theta \theta} \right> =  -\frac{1}{\Delta V} \frac{1}{4} \left( r_+^2\Delta A_r\Big|_{r_+} - r_-^2\Delta A_r\Big|_{r_-} \right) \\
+&\left<\hat{\Gamma}^{r}_{\phi \phi} \right> = \frac{1}{\Delta V} \left( -\frac{1}{4} r^4 \Big|_{r_-}^{r^+} \right) \left(\frac{1}{3}\cos^3\theta - \cos\theta\right)\Big|_{\theta_-}^{\theta^+} \Delta \phi \\
+&\left<\hat{\Gamma}^{\theta}_{\phi \phi} \right> = - \frac{1}{3} \frac{1}{\Delta V} \left( \sin^2 (\theta_+) \Delta A_\theta\Big|_{\theta_+} - \sin^2 (\theta_-) \Delta A_\theta \Big|_{\theta_-} \right) \\
+&\left<\hat{\Gamma}^{\phi}_{\theta \phi} \right> = \left<\hat{\Gamma}^{\phi}_{\phi \theta } \right> = \cot \theta
+\end{align}
