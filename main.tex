@@ -1,0 +1,223 @@
+\documentclass[12pt,twoside]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage{comment}
+\usepackage{setspace}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{aas_macros}
+\usepackage{bm}% bold math
+\usepackage{hyperref}
+\usepackage{amsmath}
+%\usepackage{float}
+\usepackage{enumerate}
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[RO,LE]{Numerical Methods for General-Relativistic Astrophysics}
+\fancyfoot{}
+\fancyfoot[LE,RO]{\thepage}
+\fancyfoot[LO,CE]{Chapter \thechapter}
+\fancyfoot[CO,RE]{Harry Ho-Yin, NG}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\DeclareUnicodeCharacter{0301}{\'}
+\DeclareMathOperator{\Tr}{Tr}
+%\usepackage{multicol}
+
+\usepackage[ruled]{algorithm2e}
+
+\usepackage{tikz}
+\tikzstyle{line} = [draw, -latex']
+\tikzstyle{cloud} = [draw, fill=red!20, node distance=3cm,minimum height=2em]
+\tikzstyle{ball} = [circle,inner sep=5pt,draw]
+
+\usepackage[style=numeric-comp,sorting=none]{biblatex}
+\addbibresource{references.bib}
+
+\title{Numerical Methods for General-Relativistic Astrophysics}
+\author{Harry Ho-Yin, NG}
+\date{29 Dec 2020}
+
+%\doublespacing
+\begin{document}
+
+\input{titlepage}
+
+\input{abstract}
+
+\chapter*{}
+To mum and dad
+
+\chapter*{Declaration}
+I declare that..
+\'\i
+
+\chapter*{Acknowledgements}
+I want to thank...
+
+\chapter*{Abbreviations and Notation}
+Units : $c = G = M_{\odot} = 1$
+\begin{table}[h]
+	\begin{tabular}{lll}
+		&ADM  &Arnowitt-Deser-Misner \\
+		&BH  &Black Hole    \\
+		&CCSNe  &Core-Collapse Supernovae    \\
+		&NS  &Neutron Star  \\
+		&  & \\
+		&  &  \\
+	\end{tabular}
+\end{table}
+
+
+
+
+\tableofcontents
+
+%\listoffigures
+
+%\chapter is level 0
+%\section is level 1
+%\subsection is level 2
+%\subsubsection is level 3
+%\paragraph is level 4
+%\subparagraph is level 5
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+%\listoftables
+
+\chapter{Introduction}
+\input{chapters/introduction}
+\chapter{\label{ch:einstein_eq}Formulations of Einstein Field Equations}
+\input{chapters/einstein_eq}
+\chapter{Formulations of the Relativistic Hydrodynamical Equations}
+\input{chapters/matter_eq}    % EM hydro eqs + neutrino + GRHD
+%\input{chapters/matter_eq_2}  %  MHD AND DIVERGENCE CLEANING 
+\chapter{Numerical methods}
+\input{chapters/numerical_methods}
+%\chapter{Numerical tests}   NOT USE YET
+%\input{chapters/numerical_tests_mg}
+%\input{chapters/numerical_tests}
+\chapter{Neutron stars}
+\input{chapters/Neutron_stars}
+
+\chapter{Core-collapse Supernovae and Neutrino treatments}
+\input{chapters/Core_collapse_Supernovae}
+
+\chapter{Conclusion}
+
+
+
+\appendix
+
+
+\chapter{\label{appendix:cfc_equations}Useful relations for implementation in CFC approximation}
+\input{chapters/appendix_cfc_eq}
+
+\chapter{Reference flat metric in 3D}
+\input{chapters/appendix_flat_metric}
+
+\chapter{Numerical methods for solving Fermi integrals}
+\input{chapters/appendix_fermi_integral}
+
+\chapter{Hydrodynamics equations with neutrino source terms}
+\input{chapters/appendix_neutrino_source_terms}
+
+
+\begin{comment}
+\chapter*{Code features}
+\begin{itemize}
+
+	\item Parallelisation
+	\begin{itemize}
+		\item MPI
+	\end{itemize}
+	\item block-tree AMR
+	\item Slope Limiters
+	\begin{itemize}
+		\item 2nd order
+		\begin{itemize}
+			\item minmod  
+			\item woodward (MC)  
+			\item superbee  
+			\item vanleer  
+			\item albada  
+			\item mcbeta  
+			\item cada  
+			\item venk %2nd order?
+		\end{itemize}
+		\item 3rd order
+		\begin{itemize}
+			\item ppm (with flatting)
+			\item koren  
+			\item cada3  
+			\item WENO3  
+			\item WENO-YC-3
+		\end{itemize}
+		\item 5th order
+		\begin{itemize}
+			\item MP5
+			\item WENO5
+			\item WENO-Z
+			\item WENO-Z+
+			\item WENO-NM-5
+			\item WENO-NM-Z
+			\item WENO-NM-Z+
+		\end{itemize}
+		\item 7th order
+		\begin{itemize}
+			\item WENO7
+			\item MP-WENO7
+			\item EXENO7
+		\end{itemize}
+	\end{itemize}
+	\item Riemann solver
+	\begin{itemize}
+		\item TVDLF
+		\item HLL
+	\end{itemize}
+	\item Temporal intergator
+	\begin{itemize}
+		\item 1st order Euler scheme
+		\item 2nd order predictor-corrector schemes
+		\item 3rd order (TVD) Runge-Kutta
+		\item 4th order Runge-Kutta (classical)
+		\item SSPRK43 ,3rd order, strong stability preserving four step Runge-Kutta
+		\item SSPRK54, 4th order, strong stability preserving five step Runge-Kutta
+		\item (ongoing) IMEX 
+	\end{itemize}
+	\item elliptic solver
+	\begin{itemize}
+		\item geometric multigrid solver
+	\end{itemize}
+	\item Coordinates
+	\begin{itemize}
+		\item Cartesian (1D, 2D, 2.5D, 3D)
+		\item Cylindrical (1D, 2D, 2.5D, 3D)
+		\item Spherical (1D, 2D, 2.5D, 3D)
+	\end{itemize}
+	\item Matter
+	\begin{itemize}
+		\item GRHydro
+		\item (ongoing) GRMHD
+		\item (ongoing) Radiation Hydro M1 (GRRHD)
+	\end{itemize}
+	\item Spacetime 
+	\begin{itemize}
+		\item CFC (1D, 2.5D ,3D)
+		\item (ongoing) FCF
+	\end{itemize}
+	\item Microphysics
+	\begin{itemize}
+		\item analytic/ tabulated EOS
+		\item (ongoing) Neutrino leakage
+		\item (ongoing) neutrino (require GRRHD)
+	\end{itemize}
+\end{itemize}
+\end{comment}
+\printbibliography
+
+\end{document}

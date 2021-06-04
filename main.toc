@@ -1,0 +1,183 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{10}{chapter.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Formulations of Einstein Field Equations}{11}{chapter.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Introduction}{11}{section.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}The $3+1$ decomposition of spacetime}{12}{section.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.1}The ADM formulation}{14}{subsection.2.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Conformal decomposition}{14}{section.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.1}Conformal decomposition of the 3-metric}{14}{subsection.2.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.2}Conformal decomposition of the Extrinsic Curvature}{14}{subsection.2.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Maximal slicing}{15}{section.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}Toward Constrained Schemes for the Einstein field equations}{16}{section.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5.1}Isenberg-Wilson-Mathews Approximation to General Relativity (Conformal Flatness condition)}{17}{subsection.2.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5.2}Extended CFC Scheme}{18}{subsection.2.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Formulations of the Relativistic Hydrodynamical Equations}{20}{chapter.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}The $3+1$ ``Valencia'' Formulation}{20}{section.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}The reference-metric formulation}{22}{section.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Conserved to Primitive variables conversion}{22}{section.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Radiation hydrodynamics}{22}{section.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.1}Boltzmann's equation}{22}{subsection.3.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.2}Moment formalism}{22}{subsection.3.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Numerical methods}{23}{chapter.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Numerical methods for hydrodynamics}{23}{section.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.1}Finite volume methods}{23}{subsection.4.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.1.1}Godunov's Method}{23}{subsubsection.4.1.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.1.2}Total-Variation-Diminishing Schemes}{23}{subsubsection.4.1.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.1.3}Reconstruction Schemes}{23}{subsubsection.4.1.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.1.4}Riemann solvers}{23}{subsubsection.4.1.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.1.5}High-Order Finite volume methods}{23}{subsubsection.4.1.1.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.2}Finite difference methods}{23}{subsection.4.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.2.1}Lax-Friedrichs Flux Splitting}{23}{subsubsection.4.1.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.3}Time Discretization}{23}{subsection.4.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.3.1}Strong Stability-Preserving Runge-Kutta Methods}{23}{subsubsection.4.1.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.3.2}Courant-Friedrichs-Lewy Condition}{23}{subsubsection.4.1.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.3.3}Implicit-explicit Schemes}{23}{subsubsection.4.1.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.4}Atmosphere Treatment}{23}{subsection.4.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.4.1}Positivity Preserving Limiter}{23}{subsubsection.4.1.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Multigrid methods for elliptic equations}{23}{section.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.1}An overview of multigrid}{23}{subsection.4.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.2}Nonlinear multigrid: The Full Approximation Scheme}{24}{subsection.4.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.3}Cell-centered discretization and intergrid transfer operators}{26}{subsection.4.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Adaptive Mesh Refinement}{28}{section.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.1}Overview of AMR}{28}{subsection.4.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.2}refinement cirteria}{28}{subsection.4.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.3}Data structure}{28}{subsection.4.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Neutron stars}{29}{chapter.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Numerical simulation of NS}{30}{section.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.1}Overview}{30}{subsection.5.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.2}The Dense Matter EOS of NS}{30}{subsection.5.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}BNS systems}{30}{section.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.1}The early inspiral}{30}{subsection.5.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.2}The late inspiral and merger}{30}{subsection.5.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.3}Post-merger remnant}{30}{subsection.5.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.4}Quasi-universal relations in BNS simulations}{30}{subsection.5.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.5}The Tidal Effective-One-Body model and Dynamical Tide effects}{30}{subsection.5.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}Asteroseismology of NS}{30}{section.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.1}Oscillation modes of stars}{30}{subsection.5.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.2}Properties of f-modes}{30}{subsection.5.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.4}GW asteroseismology with f-modes from NS binaries at the merger phase}{30}{section.5.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.1}Numerical setup and initial data}{30}{subsection.5.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.2}Extraction of f-modes}{30}{subsection.5.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.3}Comparing the frequencies of the fundamental oscillation modes to the peak GW amplitude}{30}{subsection.5.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.4}The origin of $Mf_{max}$-$\kappa ^{T}_{2}$ universal relation}{30}{subsection.5.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.5}Dynamical tide excitation and possible reasonce effects}{30}{subsection.5.4.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.6}Constraints on EOS and other applications}{30}{subsection.5.4.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Core-collapse Supernovae and Neutrino treatments}{31}{chapter.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Numerical simulation of CCSNe}{32}{section.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.1}Overview}{32}{subsection.6.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.2}Numerical setup and Initial progenitor}{32}{subsection.6.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.3}Collapse dynamics}{32}{subsection.6.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.4}The finite-temperature EOS of CCSNe}{32}{subsection.6.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.1.4.1}Tabulated EOS}{32}{subsubsection.6.1.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}Numerical simulations of CCSNe including ILEAS neutrino scheme}{32}{section.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.1}Neutrino interactions in relativistic hydrodynamical equations under CFC approximation}{32}{subsection.6.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.2}The modified neutrino leakage module}{32}{subsection.6.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.2.2.1}Reactions for opacities of production rates}{32}{subsubsection.6.2.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.2.2.2}Reactions for opacities of absorption and optical depth}{32}{subsubsection.6.2.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.3}The diffusion time-scale}{32}{subsection.6.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.2.3.1}Reactions for opacities of diffusion}{32}{subsubsection.6.2.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.4}Neutrino absorption module for optically thin region}{32}{subsection.6.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.5}Neutrino equilibration module for optically thick region}{32}{subsection.6.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.6}Neutrino luminosity and mean energy}{32}{subsection.6.2.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.7}Astrophysical tests}{32}{subsection.6.2.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.8}Comparsion to other neutrino schemes}{32}{subsection.6.2.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Conclusion}{33}{chapter.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Useful relations for implementation in CFC approximation}{34}{appendix.A}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}The Extrinsic Curvature $K_{ij}$}{34}{section.A.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.2}Vectorial elliptic equations in xCFC scheme}{35}{section.A.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {B}Reference flat metric in 3D}{38}{appendix.B}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {C}Numerical methods for solving Fermi integrals}{41}{appendix.C}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {C.1}Fermi integrals of integer order}{41}{section.C.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {C.2}Fermi integrals of half-integer order}{41}{section.C.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {D}Hydrodynamics equations with neutrino source terms}{42}{appendix.D}%
